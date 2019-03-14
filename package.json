@@ -1,11 +1,16 @@
 {
   "name": "@topl/stable-plugin-timing",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Adds timers to stable",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js"
   },
-  "author": "Christopher Thorn <christopherthorn82@gmail.com>",
-  "license": "MIT"
+  "author": "Lil Thorny <hi@lilthorny.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.6.0",
+    "rollup-plugin-json": "^3.1.0"
+  }
 }
