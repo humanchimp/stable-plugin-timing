@@ -3,12 +3,12 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var name = "@topl/stable-plugin-timing";
-var version = "0.5.2";
+var version = "0.5.5";
 var description = "Adds timers to stable";
 var main = "index.js";
 var scripts = {
 	test: "echo \"Error: no test specified\" && exit 1",
-	build: "rollup -c rollup.config.js src/index.js -o index.js -f cjs && rollup -c rollup.config.js src/listeners.js -o listeners.js -f cjs"
+	build: "rollup -c rollup.config.js src/index.js -o index.js -f cjs"
 };
 var author = "Lil Thorny <hi@lilthorny.com>";
 var license = "MIT";
