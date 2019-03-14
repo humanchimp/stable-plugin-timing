@@ -1,12 +1,8 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function pending(_, report) {
+export function pending(_, report) {
   report.startedAt = Date.now();
 }
 
-function complete(config, report, fail) {
+export function complete(config, report, fail) {
   report.endedAt = Date.now();
   report.elapsed = report.endedAt - report.startedAt;
 
@@ -17,6 +13,3 @@ function complete(config, report, fail) {
     fail(new Error(`Timeout exceeded: ${report.elapsed}ms > ${specTimeout}ms`));
   }
 }
-
-exports.pending = pending;
-exports.complete = complete;

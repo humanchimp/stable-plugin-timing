@@ -1,11 +1,11 @@
 {
   "name": "@topl/stable-plugin-timing",
-  "version": "0.5.1",
+  "version": "0.5.4",
   "description": "Adds timers to stable",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js src/index.js -o index.js -f cjs && rollup -c rollup.config.js src/listeners.js -o listeners.js -f cjs"
   },
   "author": "Lil Thorny <hi@lilthorny.com>",
   "license": "MIT",
